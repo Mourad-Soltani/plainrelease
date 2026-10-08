@@ -1,0 +1,24 @@
+# Mourad.Soltani — PlainRelease
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plainrelease"
+version = "0.1.0"
+description = "Local linter that flags internal jargon in public release notes."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Mourad.Soltani"}]
+license = {text = "MIT"}
+
+[project.scripts]
+plainrelease = "plainrelease.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

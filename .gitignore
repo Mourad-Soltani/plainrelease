@@ -1,0 +1,9 @@
+src/
+tests/
+examples/
+*.egg-info/
+.pytest_cache/
+__pycache__/
+report.html
+report.json
+.venv/
